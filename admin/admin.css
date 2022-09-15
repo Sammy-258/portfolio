@@ -1,0 +1,156 @@
+/* project section */
+
+body .project-section {
+    width: 100%;
+    background: rgb(5, 5, 5);
+    min-height: 100vh;
+}
+
+p {
+    color: white;
+}
+
+span {
+    color: whitesmoke;
+}
+
+.col-lg-3 .project-display {
+    width: 100%;
+    height: fit-content;
+    background: rgb(15, 15, 15);
+}
+
+.col-lg-3 .project-display .project-display-img-box {
+    width: 100%;
+    height: 200px;
+}
+
+.col-lg-3 .project-display .project-display-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-first-text {
+    font-size: 1.5rem;
+}
+
+.project-second-text {
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.text-links {
+    font-size: 0.9rem;
+    padding: 8px 8px 8px 8px;
+    background-color: crimson;
+    width: fit-content;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+
+/* skills section */
+
+.col-lg-4 .skills-display {
+    background-color: rgb(20, 20, 20);
+}
+
+.skills-first-text {
+    font-size: 1.5rem;
+}
+
+
+/* modal box */
+
+body .modal-box {
+    width: 100%;
+    height: fit-content;
+    bottom: 25%;
+    top: 25%;
+    background: transparent;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+}
+
+body .modal-box .modal-box-one {
+    width: 30%;
+    height: 100%;
+    background: rgba(20, 25, 25);
+}
+
+body .modal-box .modal-box-two {
+    width: 70%;
+    height: 100%;
+    background: rgba(20, 25, 25);
+}
+
+.col-lg-6 .modal-img-box {
+    width: 100%;
+    height: 100%;
+    background: rgba(20, 25, 25);
+}
+
+.col-lg-6 .modal-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form-text {
+    font-size: 1.4em;
+    color: whitesmoke;
+}
+
+input {
+    background-color: transparent !important;
+    border: 1px solid white;
+    height: 40px !important;
+    width: 100%;
+    border-radius: 5px;
+    color: whitesmoke !important;
+    font-size: 1.2em;
+}
+
+textarea {
+    background-color: transparent;
+    border: 1px solid white;
+    width: 100%;
+    border-radius: 5px;
+    color: whitesmoke !important;
+    font-size: 1em;
+}
+
+.btn-general:focus {
+    box-shadow: none;
+}
+
+
+/* testimonail */
+
+.img-box-seventh-section {
+    width: 60px;
+    height: 60px;
+}
+
+.img-box-seventh-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.name-section-seventh span {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.name-section-seventh p {
+    font-size: 1.2em;
+    margin-top: -5px;
+    font-weight: bold;
+}
+
+.text-area-seventh p {
+    font-size: 0.9em;
+}
