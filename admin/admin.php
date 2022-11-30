@@ -13,7 +13,7 @@ include("functions.php");
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../bootstrap-5.1.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../bootstrap-5.1.3-dist/css/bootstrap.css">
     <link rel="stylesheet" href="admin.css">
     <!-- <link rel="stylesheet" href="../index.css"> -->
     <title>Admin Sammy</title>
@@ -51,8 +51,7 @@ include("functions.php");
                             $name=$row["name"];
                             $image=$row["image"];
                             $id=$row["id"];
-                            $ajax=$row["ajax_no"];
-                            project($name, $image, $id, $ajax);
+                            project($name, $image, $id);
 
 
                         
@@ -109,23 +108,29 @@ include("functions.php");
                 <p class="text-links text-center px-5 py-2" style="background:grey;" id="create">Create</p>
             </div>
             <div class="row">
-                <?php
-                    $sql="SELECT * FROM `testimonail`";
-                    $result=mysqli_query($conn, $sql);
-                    if(mysqli_num_rows($result)){
-                        while($row=mysqli_fetch_assoc($result)){
-                            $name=$row["name"];
-                            $image=$row["image"];
-                            $testimonail=$row["testimonial"];
+                <div class="col-lg-10 m-auto">
+                    <div class="row">
+                        <?php
+                            $sql="SELECT * FROM `testimonail`";
+                            $result=mysqli_query($conn, $sql);
+                            if(mysqli_num_rows($result)){
+                                while($row=mysqli_fetch_assoc($result)){
+                                    $name=$row["name"];
+                                    $image=$row["image"];
+                                    $testimonail=$row["testimonial"];
+                                    
+                                    testimonial($name, $image, $testimonail, $ajax);
+
+
+                                
+                                } 
+                            }
                             
-                            testimonial($name, $image, $testimonail, $ajax);
-
-
-                        
-                        } 
-                    }
+                        ?>
+                    </div>
                     
-                ?>
+                </div>
+                
                 
             </div>
         </div>
